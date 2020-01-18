@@ -1,4 +1,34 @@
+spring:
+  profiles:
+    active: "dev"
+  main:
+    banner-mode: "off"
+    
+---
+spring:
+  profiles: dev
 configuration:
-  projectName : Spring Boot
+  projectName : DEV Spring Boot
+
+
+---
+spring:
+  profiles: test
+configuration:
+  projectName : TEST Spring Boot
+
+
+---
+spring:
+  profiles: uat
+configuration:
+  projectName : UAT Spring Boot
+
+
+---
+spring:
+  profiles: prod
+configuration:
+  projectName : PROD Spring Boot
 
 
