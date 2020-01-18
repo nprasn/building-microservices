@@ -30,6 +30,11 @@ public class Application {
 				"configurationProjectProperties.projectName = " + cp.getProjectName());
 	}
 
+	@Autowired
+	void setLocalDataSource(LocalDataSource ds) {
+		System.out.println("LocalDataSource.projectName = " + ds.getProjectName());
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class);
 	}
